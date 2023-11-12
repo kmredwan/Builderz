@@ -3,47 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <!-- header start -->
-    <header>
-      <!-- logo start  -->
-      <div>
-        <h1>Builderz</h1>
-      </div>
-      <!-- logo end  -->
-      <!-- time & contact start -->
-      <div>
+    <header class="container header">
+      <!-- logo_content_wapper start  -->
+      <div class="logo_content_wapper">
+        <!-- logo start  -->
+        <div class="logo">
+          <h1>Builderz</h1>
+        </div>
+        <!-- logo end  -->
+        <!-- time & contact start -->
         <div>
-          <div>logo</div>
-          <div>
-            <h3>Opening Hour</h3>
-            <span>Mon - Fri , 8:00 - 9 : 00</span>
-          </div>
+          <div class="time_content">
+            <div class="time_content_single_box">
+              <div class="single_box_logo">
+                <img src="/image/open.png" alt="clock" />
+              </div>
+              <div class="single_box_content">
+                <h3>Opening Hour</h3>
+                <span>Mon - Fri , 8:00 - 9 : 00</span>
+              </div>
+            </div>
 
-          <div>
-            <h3>Opening Hour</h3>
-            <span>Mon - Fri , 8:00 - 9 : 00</span>
-          </div>
+            <div class="time_content_single_box">
+              <div class="single_box_logo">
+                <img src="/image/phone-call.png" alt="clock" />
+              </div>
+              <div class="single_box_content">
+                <h3>Call US</h3>
+                <span>+8801710-000000</span>
+              </div>
+            </div>
 
-          <div>
-            <h3>Opening Hour</h3>
-            <span>Mon - Fri , 8:00 - 9 : 00</span>
+            <div class="time_content_single_box">
+              <div class="single_box_logo">
+                <img src="/image/email.png" alt="clock" />
+              </div>
+              <div class="single_box_content">
+                <h3>Email US</h3>
+                <span>example@gmail.com</span>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- time & contact start -->
       </div>
-      <!-- time & contact start -->
+      <!-- logo_content_wapper start  -->
       <!-- Menu start start -->
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Service</li>
-        <li>Team</li>
-        <li>Project</li>
-        <li>Page</li>
-        <li>contact</li>
-      </ul>
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Service</li>
+          <li>Team</li>
+          <li>Project</li>
+          <li>
+            Page
+            <ul>
+              <li>single Page</li>
+              <li>
+                Blog Page
+                <ul>
+                  <li>Food Blog</li>
+                  <li>Cupule Blog</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>contact</li>
+        </ul>
+        <button>Get A Quote</button>
+      </div>
       <!-- Menu start end -->
     </header>
     <!-- header end -->
