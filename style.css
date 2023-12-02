@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Average&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Hanken+Grotesk:ital,wght@0,500;1,700;1,800&family=Lato:ital,wght@0,300;0,400;0,700;1,100&family=Martel:wght@200&family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@400;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&family=Sacramento&family=Saira:ital,wght@0,200;0,300;0,400;1,200&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "sans-serif";
 }
 
 .container {
@@ -42,4 +45,106 @@
 .time_content_single_box .single_box_logo img {
   width: 35px;
 }
+
+/* menu css  */
+.menu {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background: #030f27;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.menu .memu_item_wapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu a {
+  float: left;
+  font-size: 16px;
+  min-width: 90px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.active {
+  background: #2c3e50;
+}
+.sub-menu {
+  float: left;
+  overflow: hidden;
+}
+.sub-menu .nav-btn {
+  cursor: pointer;
+  min-width: 120px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  transition: all 0.5s;
+}
+
+.menu a:hover,
+.menu-nav:hover .nav-btn {
+  background-color: #2c3e50;
+}
+
+.sub-menu-alt {
+  display: none;
+  position: absolute;
+  background-color: #2c3e50;
+  z-index: 1;
+}
+.sub-menu-alt a {
+  min-width: 90px;
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.sub-menu-alt a:hover {
+  background-color: #eee;
+  color: #000;
+}
+.sub-menu:hover .sub-menu-alt {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .sub-menu {
+    flex-direction: column;
+  }
+  .sub-menu-nav {
+    text-align: center;
+    width: 100%;
+  }
+  .nav-btn {
+    width: 100%;
+  }
+}
+
+.memu_btn {
+  background: transparent;
+  border: 3px solid white;
+  outline: none;
+  color: white;
+  padding: 10px 15px;
+  transition: all 1s;
+}
+
+.memu_btn:hover {
+  background: #fdbe33;
+  border: 3px solid #fdbe33;
+}
+
 /* header css end  */
